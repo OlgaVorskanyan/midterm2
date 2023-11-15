@@ -42,7 +42,7 @@ class UserViewModel : ViewModel() {
 }
 
 object MyUserServiceFactory {
-    private const val BASE_URL = "https://jsonplaceholder.typicode.com/"
+    private const val BASE_URL = "https://jsonplaceholder.typicode.com/users"
 
     fun create(): UserService {
         val retrofit = Retrofit.Builder()

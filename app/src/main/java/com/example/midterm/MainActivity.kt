@@ -8,6 +8,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.midterm.ui.theme.MidtermTheme
@@ -27,9 +28,12 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    UserListScreen(
 
-                    )
+                    LaunchedEffect(true) {
+                        //need to fetch the users here
+                        //viewModel.fetchUsers()
+                    }
+                    UserComposables()
                 }
             }
         }
